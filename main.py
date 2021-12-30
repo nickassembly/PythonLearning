@@ -5,7 +5,6 @@ def days_to_units(num_of_days):
     return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
 
 def validate_and_execute():
-
         try:
             user_input_number = int(num_of_days_element)
             # we want to do conversion only for positive ints
@@ -22,16 +21,11 @@ def validate_and_execute():
 
 user_input = ""
 while user_input != "exit":
-    user_input = input("Enter number of days as a comma separated list and I will convert to hours.\n")
-    list_of_days = user_input.split(", ")
-    print(list_of_days)
-    print(set(list_of_days))
+    user_input = input("Enter number of days and conversion unit.\n")
+    days_and_unit = user_input.split(":")
 
-    print(type(list_of_days))
-    print(type(set(list_of_days)))
 
-    for num_of_days_element in set(user_input.split(", ")):
-        validate_and_execute()
+
 
 
 
