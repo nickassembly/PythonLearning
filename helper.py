@@ -1,3 +1,16 @@
+# from helper import validate_and_execute, user_input_message
+#
+# user_input = ""
+# while user_input != "exit":
+#     user_input = input(user_input_message)
+#     days_and_unit = user_input.split(":")
+#     print(days_and_unit)
+#     days_and_unit_dictionary = {"days": days_and_unit[0], "unit":days_and_unit[1]}
+#     print(days_and_unit_dictionary)
+#     print(type(days_and_unit_dictionary))
+#     validate_and_execute(days_and_unit_dictionary)
+# Above code can go in main.py programming loop to utilize program
+
 def days_to_units(num_of_days, conversion_unit):
     if conversion_unit == "hours":
       return f"{num_of_days} days are {num_of_days * 24} hours"
